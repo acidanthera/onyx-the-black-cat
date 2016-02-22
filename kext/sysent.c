@@ -89,6 +89,7 @@ find_sysent(mach_vm_address_t *out_kernel_base)
     }
     switch (version_major)
     {
+		case ELCAPITAN:
         case YOSEMITE:
             g_sysent_yos = (struct sysent_yosemite*)g_sysent_addr;
             break;
@@ -110,7 +111,7 @@ cleanup_sysent(void)
 {
     enable_kernel_write();
 
-    if (version_major == YOSEMITE)
+    if (version_major >= YOSEMITE)
     {
         if (real_ptrace != NULL && g_sysent_yos[SYS_ptrace].sy_call != (sy_call_t *)real_ptrace)
         {
@@ -253,7 +254,7 @@ bruteforce_sysent(mach_vm_address_t *out_kernel_base)
     // bruteforce search for sysent in __DATA segment
     while (data_address <= data_limit)
     {
-        if (version_major == YOSEMITE)
+        if (version_major >= YOSEMITE)
         {
             struct sysent_yosemite *table = (struct sysent_yosemite*)data_address;
             if((void*)table != NULL &&

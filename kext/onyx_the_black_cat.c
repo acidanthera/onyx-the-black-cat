@@ -73,9 +73,9 @@ onyx_the_black_cat_start (kmod_info_t * ki, void * d)
            "      The Black Cat v%s\n", VERSION);
     
     /* needs to be updated for every new major version supported */
-    if (version_major > YOSEMITE)
+    if (version_major > ELCAPITAN)
     {
-        LOG_ERROR("Only Yosemite or lower supported!");
+        LOG_ERROR("Only El Capitan or lower supported!");
         return KERN_FAILURE;
     }
     
