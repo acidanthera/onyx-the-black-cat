@@ -12,32 +12,30 @@
 		7BED9867174D0D8B00330131 /* kernel_control.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BED9864174D0D8B00330131 /* kernel_control.c */; };
 		7BED9868174D0D8B00330131 /* kernel_control.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BED9865174D0D8B00330131 /* kernel_control.h */; };
 		7BED9869174D0D8B00330131 /* shared_data.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BED9866174D0D8B00330131 /* shared_data.h */; };
-		7BFDE774174D8D04004A5391 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BFDE760174D8D04004A5391 /* config.h */; };
-		7BFDE775174D8D04004A5391 /* decoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BFDE761174D8D04004A5391 /* decoder.c */; };
-		7BFDE776174D8D04004A5391 /* decoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BFDE762174D8D04004A5391 /* decoder.h */; };
-		7BFDE777174D8D04004A5391 /* distorm.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BFDE763174D8D04004A5391 /* distorm.c */; };
-		7BFDE778174D8D04004A5391 /* distorm.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BFDE764174D8D04004A5391 /* distorm.h */; };
-		7BFDE779174D8D04004A5391 /* instructions.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BFDE765174D8D04004A5391 /* instructions.c */; };
-		7BFDE77A174D8D04004A5391 /* instructions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BFDE766174D8D04004A5391 /* instructions.h */; };
-		7BFDE77B174D8D04004A5391 /* insts.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BFDE767174D8D04004A5391 /* insts.c */; };
-		7BFDE77C174D8D04004A5391 /* insts.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BFDE768174D8D04004A5391 /* insts.h */; };
-		7BFDE77D174D8D04004A5391 /* mnemonics.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BFDE769174D8D04004A5391 /* mnemonics.c */; };
-		7BFDE77E174D8D04004A5391 /* mnemonics.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BFDE76A174D8D04004A5391 /* mnemonics.h */; };
-		7BFDE77F174D8D04004A5391 /* operands.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BFDE76B174D8D04004A5391 /* operands.c */; };
-		7BFDE780174D8D04004A5391 /* operands.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BFDE76C174D8D04004A5391 /* operands.h */; };
-		7BFDE781174D8D04004A5391 /* prefix.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BFDE76D174D8D04004A5391 /* prefix.c */; };
-		7BFDE782174D8D05004A5391 /* prefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BFDE76E174D8D04004A5391 /* prefix.h */; };
-		7BFDE783174D8D05004A5391 /* textdefs.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BFDE76F174D8D04004A5391 /* textdefs.c */; };
-		7BFDE784174D8D05004A5391 /* textdefs.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BFDE770174D8D04004A5391 /* textdefs.h */; };
-		7BFDE785174D8D05004A5391 /* wstring.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BFDE771174D8D04004A5391 /* wstring.c */; };
-		7BFDE786174D8D05004A5391 /* wstring.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BFDE772174D8D04004A5391 /* wstring.h */; };
-		7BFDE787174D8D05004A5391 /* x86defs.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BFDE773174D8D04004A5391 /* x86defs.h */; };
 		7BFDE78B174D8D2E004A5391 /* disasm_utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BFDE789174D8D2E004A5391 /* disasm_utils.h */; };
 		7BFDE78E174D92A8004A5391 /* kernel_info.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BFDE78C174D92A7004A5391 /* kernel_info.c */; };
 		7BFDE78F174D92A8004A5391 /* kernel_info.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BFDE78D174D92A8004A5391 /* kernel_info.h */; };
 		7BFDE790174DBACA004A5391 /* disasm_utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BFDE788174D8D2E004A5391 /* disasm_utils.c */; };
 		7BFDE792174DBBBD004A5391 /* utlist.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BFDE791174DBBBD004A5391 /* utlist.h */; };
 		7BFDE794174EEA0E004A5391 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 7BFDE793174EEA0E004A5391 /* README */; };
+		CEC961501D940E7A00D186C1 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = CEC9613E1D940E7A00D186C1 /* config.h */; };
+		CEC961511D940E7A00D186C1 /* decoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CEC9613F1D940E7A00D186C1 /* decoder.c */; };
+		CEC961521D940E7A00D186C1 /* decoder.h in Headers */ = {isa = PBXBuildFile; fileRef = CEC961401D940E7A00D186C1 /* decoder.h */; };
+		CEC961531D940E7A00D186C1 /* distorm.c in Sources */ = {isa = PBXBuildFile; fileRef = CEC961411D940E7A00D186C1 /* distorm.c */; };
+		CEC961541D940E7A00D186C1 /* instructions.c in Sources */ = {isa = PBXBuildFile; fileRef = CEC961421D940E7A00D186C1 /* instructions.c */; };
+		CEC961551D940E7A00D186C1 /* instructions.h in Headers */ = {isa = PBXBuildFile; fileRef = CEC961431D940E7A00D186C1 /* instructions.h */; };
+		CEC961561D940E7A00D186C1 /* insts.c in Sources */ = {isa = PBXBuildFile; fileRef = CEC961441D940E7A00D186C1 /* insts.c */; };
+		CEC961571D940E7A00D186C1 /* insts.h in Headers */ = {isa = PBXBuildFile; fileRef = CEC961451D940E7A00D186C1 /* insts.h */; };
+		CEC961581D940E7A00D186C1 /* mnemonics.c in Sources */ = {isa = PBXBuildFile; fileRef = CEC961461D940E7A00D186C1 /* mnemonics.c */; };
+		CEC961591D940E7A00D186C1 /* operands.c in Sources */ = {isa = PBXBuildFile; fileRef = CEC961471D940E7A00D186C1 /* operands.c */; };
+		CEC9615A1D940E7A00D186C1 /* operands.h in Headers */ = {isa = PBXBuildFile; fileRef = CEC961481D940E7A00D186C1 /* operands.h */; };
+		CEC9615B1D940E7A00D186C1 /* prefix.c in Sources */ = {isa = PBXBuildFile; fileRef = CEC961491D940E7A00D186C1 /* prefix.c */; };
+		CEC9615C1D940E7A00D186C1 /* prefix.h in Headers */ = {isa = PBXBuildFile; fileRef = CEC9614A1D940E7A00D186C1 /* prefix.h */; };
+		CEC9615D1D940E7A00D186C1 /* textdefs.c in Sources */ = {isa = PBXBuildFile; fileRef = CEC9614B1D940E7A00D186C1 /* textdefs.c */; };
+		CEC9615E1D940E7A00D186C1 /* textdefs.h in Headers */ = {isa = PBXBuildFile; fileRef = CEC9614C1D940E7A00D186C1 /* textdefs.h */; };
+		CEC9615F1D940E7A00D186C1 /* wstring.c in Sources */ = {isa = PBXBuildFile; fileRef = CEC9614D1D940E7A00D186C1 /* wstring.c */; };
+		CEC961601D940E7A00D186C1 /* wstring.h in Headers */ = {isa = PBXBuildFile; fileRef = CEC9614E1D940E7A00D186C1 /* wstring.h */; };
+		CEC961611D940E7A00D186C1 /* x86defs.h in Headers */ = {isa = PBXBuildFile; fileRef = CEC9614F1D940E7A00D186C1 /* x86defs.h */; };
 		DE00E0F31426ADF500E09EDC /* sysent.h in Headers */ = {isa = PBXBuildFile; fileRef = DE00E0F11426ADF500E09EDC /* sysent.h */; };
 		DE00E0F41426ADF500E09EDC /* sysent.c in Sources */ = {isa = PBXBuildFile; fileRef = DE00E0F21426ADF500E09EDC /* sysent.c */; };
 		DE00E1241426B70000E09EDC /* syscall.h in Headers */ = {isa = PBXBuildFile; fileRef = DE00E1231426B70000E09EDC /* syscall.h */; };
@@ -62,32 +60,30 @@
 		7BED9865174D0D8B00330131 /* kernel_control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kernel_control.h; sourceTree = "<group>"; };
 		7BED9866174D0D8B00330131 /* shared_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shared_data.h; sourceTree = "<group>"; };
 		7BED986A174D102200330131 /* my_data_definitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = my_data_definitions.h; sourceTree = "<group>"; };
-		7BFDE760174D8D04004A5391 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
-		7BFDE761174D8D04004A5391 /* decoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = decoder.c; sourceTree = "<group>"; };
-		7BFDE762174D8D04004A5391 /* decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decoder.h; sourceTree = "<group>"; };
-		7BFDE763174D8D04004A5391 /* distorm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = distorm.c; sourceTree = "<group>"; };
-		7BFDE764174D8D04004A5391 /* distorm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = distorm.h; sourceTree = "<group>"; };
-		7BFDE765174D8D04004A5391 /* instructions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = instructions.c; sourceTree = "<group>"; };
-		7BFDE766174D8D04004A5391 /* instructions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = instructions.h; sourceTree = "<group>"; };
-		7BFDE767174D8D04004A5391 /* insts.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = insts.c; sourceTree = "<group>"; };
-		7BFDE768174D8D04004A5391 /* insts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = insts.h; sourceTree = "<group>"; };
-		7BFDE769174D8D04004A5391 /* mnemonics.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mnemonics.c; sourceTree = "<group>"; };
-		7BFDE76A174D8D04004A5391 /* mnemonics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mnemonics.h; sourceTree = "<group>"; };
-		7BFDE76B174D8D04004A5391 /* operands.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = operands.c; sourceTree = "<group>"; };
-		7BFDE76C174D8D04004A5391 /* operands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = operands.h; sourceTree = "<group>"; };
-		7BFDE76D174D8D04004A5391 /* prefix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = prefix.c; sourceTree = "<group>"; };
-		7BFDE76E174D8D04004A5391 /* prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prefix.h; sourceTree = "<group>"; };
-		7BFDE76F174D8D04004A5391 /* textdefs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = textdefs.c; sourceTree = "<group>"; };
-		7BFDE770174D8D04004A5391 /* textdefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = textdefs.h; sourceTree = "<group>"; };
-		7BFDE771174D8D04004A5391 /* wstring.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wstring.c; sourceTree = "<group>"; };
-		7BFDE772174D8D04004A5391 /* wstring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wstring.h; sourceTree = "<group>"; };
-		7BFDE773174D8D04004A5391 /* x86defs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x86defs.h; sourceTree = "<group>"; };
 		7BFDE788174D8D2E004A5391 /* disasm_utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = disasm_utils.c; sourceTree = "<group>"; };
 		7BFDE789174D8D2E004A5391 /* disasm_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = disasm_utils.h; sourceTree = "<group>"; };
 		7BFDE78C174D92A7004A5391 /* kernel_info.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kernel_info.c; sourceTree = "<group>"; };
 		7BFDE78D174D92A8004A5391 /* kernel_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kernel_info.h; sourceTree = "<group>"; };
 		7BFDE791174DBBBD004A5391 /* utlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utlist.h; sourceTree = "<group>"; };
 		7BFDE793174EEA0E004A5391 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		CEC9613E1D940E7A00D186C1 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = ../distorm/src/config.h; sourceTree = "<group>"; };
+		CEC9613F1D940E7A00D186C1 /* decoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = decoder.c; path = ../distorm/src/decoder.c; sourceTree = "<group>"; };
+		CEC961401D940E7A00D186C1 /* decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = decoder.h; path = ../distorm/src/decoder.h; sourceTree = "<group>"; };
+		CEC961411D940E7A00D186C1 /* distorm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = distorm.c; path = ../distorm/src/distorm.c; sourceTree = "<group>"; };
+		CEC961421D940E7A00D186C1 /* instructions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = instructions.c; path = ../distorm/src/instructions.c; sourceTree = "<group>"; };
+		CEC961431D940E7A00D186C1 /* instructions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = instructions.h; path = ../distorm/src/instructions.h; sourceTree = "<group>"; };
+		CEC961441D940E7A00D186C1 /* insts.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = insts.c; path = ../distorm/src/insts.c; sourceTree = "<group>"; };
+		CEC961451D940E7A00D186C1 /* insts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = insts.h; path = ../distorm/src/insts.h; sourceTree = "<group>"; };
+		CEC961461D940E7A00D186C1 /* mnemonics.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mnemonics.c; path = ../distorm/src/mnemonics.c; sourceTree = "<group>"; };
+		CEC961471D940E7A00D186C1 /* operands.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = operands.c; path = ../distorm/src/operands.c; sourceTree = "<group>"; };
+		CEC961481D940E7A00D186C1 /* operands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = operands.h; path = ../distorm/src/operands.h; sourceTree = "<group>"; };
+		CEC961491D940E7A00D186C1 /* prefix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = prefix.c; path = ../distorm/src/prefix.c; sourceTree = "<group>"; };
+		CEC9614A1D940E7A00D186C1 /* prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = prefix.h; path = ../distorm/src/prefix.h; sourceTree = "<group>"; };
+		CEC9614B1D940E7A00D186C1 /* textdefs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = textdefs.c; path = ../distorm/src/textdefs.c; sourceTree = "<group>"; };
+		CEC9614C1D940E7A00D186C1 /* textdefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = textdefs.h; path = ../distorm/src/textdefs.h; sourceTree = "<group>"; };
+		CEC9614D1D940E7A00D186C1 /* wstring.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = wstring.c; path = ../distorm/src/wstring.c; sourceTree = "<group>"; };
+		CEC9614E1D940E7A00D186C1 /* wstring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wstring.h; path = ../distorm/src/wstring.h; sourceTree = "<group>"; };
+		CEC9614F1D940E7A00D186C1 /* x86defs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = x86defs.h; path = ../distorm/src/x86defs.h; sourceTree = "<group>"; };
 		D27513B306A6225300ADB3A4 /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = /System/Library/Frameworks/Kernel.framework; sourceTree = "<absolute>"; };
 		DE00E0F11426ADF500E09EDC /* sysent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sysent.h; sourceTree = "<group>"; };
 		DE00E0F21426ADF500E09EDC /* sysent.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sysent.c; sourceTree = "<group>"; };
@@ -166,7 +162,7 @@
 				7BFDE78C174D92A7004A5391 /* kernel_info.c */,
 				7BFDE78D174D92A8004A5391 /* kernel_info.h */,
 				7BFDE791174DBBBD004A5391 /* utlist.h */,
-				7BFDE75F174D8D04004A5391 /* distorm */,
+				CEC9613D1D940E6E00D186C1 /* distorm */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -191,31 +187,29 @@
 			name = command_and_control;
 			sourceTree = "<group>";
 		};
-		7BFDE75F174D8D04004A5391 /* distorm */ = {
+		CEC9613D1D940E6E00D186C1 /* distorm */ = {
 			isa = PBXGroup;
 			children = (
-				7BFDE760174D8D04004A5391 /* config.h */,
-				7BFDE761174D8D04004A5391 /* decoder.c */,
-				7BFDE762174D8D04004A5391 /* decoder.h */,
-				7BFDE763174D8D04004A5391 /* distorm.c */,
-				7BFDE764174D8D04004A5391 /* distorm.h */,
-				7BFDE765174D8D04004A5391 /* instructions.c */,
-				7BFDE766174D8D04004A5391 /* instructions.h */,
-				7BFDE767174D8D04004A5391 /* insts.c */,
-				7BFDE768174D8D04004A5391 /* insts.h */,
-				7BFDE769174D8D04004A5391 /* mnemonics.c */,
-				7BFDE76A174D8D04004A5391 /* mnemonics.h */,
-				7BFDE76B174D8D04004A5391 /* operands.c */,
-				7BFDE76C174D8D04004A5391 /* operands.h */,
-				7BFDE76D174D8D04004A5391 /* prefix.c */,
-				7BFDE76E174D8D04004A5391 /* prefix.h */,
-				7BFDE76F174D8D04004A5391 /* textdefs.c */,
-				7BFDE770174D8D04004A5391 /* textdefs.h */,
-				7BFDE771174D8D04004A5391 /* wstring.c */,
-				7BFDE772174D8D04004A5391 /* wstring.h */,
-				7BFDE773174D8D04004A5391 /* x86defs.h */,
+				CEC9613E1D940E7A00D186C1 /* config.h */,
+				CEC9613F1D940E7A00D186C1 /* decoder.c */,
+				CEC961401D940E7A00D186C1 /* decoder.h */,
+				CEC961411D940E7A00D186C1 /* distorm.c */,
+				CEC961421D940E7A00D186C1 /* instructions.c */,
+				CEC961431D940E7A00D186C1 /* instructions.h */,
+				CEC961441D940E7A00D186C1 /* insts.c */,
+				CEC961451D940E7A00D186C1 /* insts.h */,
+				CEC961461D940E7A00D186C1 /* mnemonics.c */,
+				CEC961471D940E7A00D186C1 /* operands.c */,
+				CEC961481D940E7A00D186C1 /* operands.h */,
+				CEC961491D940E7A00D186C1 /* prefix.c */,
+				CEC9614A1D940E7A00D186C1 /* prefix.h */,
+				CEC9614B1D940E7A00D186C1 /* textdefs.c */,
+				CEC9614C1D940E7A00D186C1 /* textdefs.h */,
+				CEC9614D1D940E7A00D186C1 /* wstring.c */,
+				CEC9614E1D940E7A00D186C1 /* wstring.h */,
+				CEC9614F1D940E7A00D186C1 /* x86defs.h */,
 			);
-			path = distorm;
+			name = distorm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,27 +219,25 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC9615C1D940E7A00D186C1 /* prefix.h in Headers */,
 				DE00E0F31426ADF500E09EDC /* sysent.h in Headers */,
 				DE00E1241426B70000E09EDC /* syscall.h in Headers */,
+				CEC9615E1D940E7A00D186C1 /* textdefs.h in Headers */,
+				CEC9615A1D940E7A00D186C1 /* operands.h in Headers */,
+				CEC961611D940E7A00D186C1 /* x86defs.h in Headers */,
 				DE00E1441426B94C00E09EDC /* sysproto.h in Headers */,
 				DE00E1ED142761D100E09EDC /* proc.h in Headers */,
 				DE00E2B71427871100E09EDC /* antidebug.h in Headers */,
 				DE00E3651427916500E09EDC /* cpu_protections.h in Headers */,
+				CEC961501D940E7A00D186C1 /* config.h in Headers */,
 				DE586C7B1448930D00C012AF /* patchkernel.h in Headers */,
 				DE4CB1CC14F077D0003510F4 /* idt.h in Headers */,
+				CEC961551D940E7A00D186C1 /* instructions.h in Headers */,
+				CEC961601D940E7A00D186C1 /* wstring.h in Headers */,
 				7BED9868174D0D8B00330131 /* kernel_control.h in Headers */,
+				CEC961521D940E7A00D186C1 /* decoder.h in Headers */,
 				7BED9869174D0D8B00330131 /* shared_data.h in Headers */,
-				7BFDE774174D8D04004A5391 /* config.h in Headers */,
-				7BFDE776174D8D04004A5391 /* decoder.h in Headers */,
-				7BFDE778174D8D04004A5391 /* distorm.h in Headers */,
-				7BFDE77A174D8D04004A5391 /* instructions.h in Headers */,
-				7BFDE77C174D8D04004A5391 /* insts.h in Headers */,
-				7BFDE77E174D8D04004A5391 /* mnemonics.h in Headers */,
-				7BFDE780174D8D04004A5391 /* operands.h in Headers */,
-				7BFDE782174D8D05004A5391 /* prefix.h in Headers */,
-				7BFDE784174D8D05004A5391 /* textdefs.h in Headers */,
-				7BFDE786174D8D05004A5391 /* wstring.h in Headers */,
-				7BFDE787174D8D05004A5391 /* x86defs.h in Headers */,
+				CEC961571D940E7A00D186C1 /* insts.h in Headers */,
 				7BFDE78B174D8D2E004A5391 /* disasm_utils.h in Headers */,
 				7BFDE78F174D92A8004A5391 /* kernel_info.h in Headers */,
 				7BFDE792174DBBBD004A5391 /* utlist.h in Headers */,
@@ -281,7 +273,7 @@
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0800;
 			};
 			buildConfigurationList = 1DEB91C708733DAC0010E9CD /* Build configuration list for PBXProject "onyx-the-black-cat" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -329,22 +321,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC961511D940E7A00D186C1 /* decoder.c in Sources */,
 				32A4FEBE0562C75700D090E7 /* onyx_the_black_cat.c in Sources */,
 				DE1F6B890F73FA58000EAE67 /* antidebug.c in Sources */,
 				DEF2A93A13B5503A00440E21 /* cpu_protections.c in Sources */,
+				CEC9615F1D940E7A00D186C1 /* wstring.c in Sources */,
+				CEC961531D940E7A00D186C1 /* distorm.c in Sources */,
 				DE00E0F41426ADF500E09EDC /* sysent.c in Sources */,
 				DE586C7A1448930D00C012AF /* patchkernel.c in Sources */,
+				CEC9615B1D940E7A00D186C1 /* prefix.c in Sources */,
 				DE4CB1CB14F077D0003510F4 /* idt.c in Sources */,
+				CEC961561D940E7A00D186C1 /* insts.c in Sources */,
+				CEC961581D940E7A00D186C1 /* mnemonics.c in Sources */,
+				CEC961591D940E7A00D186C1 /* operands.c in Sources */,
+				CEC9615D1D940E7A00D186C1 /* textdefs.c in Sources */,
+				CEC961541D940E7A00D186C1 /* instructions.c in Sources */,
 				7BED9867174D0D8B00330131 /* kernel_control.c in Sources */,
-				7BFDE775174D8D04004A5391 /* decoder.c in Sources */,
-				7BFDE777174D8D04004A5391 /* distorm.c in Sources */,
-				7BFDE779174D8D04004A5391 /* instructions.c in Sources */,
-				7BFDE77B174D8D04004A5391 /* insts.c in Sources */,
-				7BFDE77D174D8D04004A5391 /* mnemonics.c in Sources */,
-				7BFDE77F174D8D04004A5391 /* operands.c in Sources */,
-				7BFDE781174D8D04004A5391 /* prefix.c in Sources */,
-				7BFDE783174D8D05004A5391 /* textdefs.c in Sources */,
-				7BFDE785174D8D05004A5391 /* wstring.c in Sources */,
 				7BFDE78E174D92A8004A5391 /* kernel_info.c in Sources */,
 				7BFDE790174DBACA004A5391 /* disasm_utils.c in Sources */,
 			);
@@ -375,7 +367,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "DEBUG=1";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../distorm/include";
 				INFOPLIST_FILE = Info.plist;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				MODULE_NAME = put.as.kext.onyx_the_black_cat;
@@ -396,7 +388,7 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../distorm/include";
 				INFOPLIST_FILE = Info.plist;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				MODULE_NAME = put.as.kext.onyx_the_black_cat;
@@ -412,7 +404,21 @@
 		1DEB91C808733DAC0010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
@@ -426,7 +432,21 @@
 		1DEB91C908733DAC0010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PREBINDING = NO;
