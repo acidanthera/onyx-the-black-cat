@@ -52,7 +52,7 @@
 #include "disasm_utils.h"
 #include "patchkernel.h"
 
-#define VERSION "3.0"
+#define VERSION "3.1"
 
 /* globals */
 struct kernel_info g_kernel_info;
@@ -73,9 +73,9 @@ onyx_the_black_cat_start (kmod_info_t * ki, void * d)
            "      The Black Cat v%s\n", VERSION);
     
     /* needs to be updated for every new major version supported */
-    if (version_major > ELCAPITAN)
+    if (version_major > SIERRA)
     {
-        LOG_ERROR("Only El Capitan or lower supported!");
+        LOG_ERROR("Only Sierra or lower supported!");
         return KERN_FAILURE;
     }
     

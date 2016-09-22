@@ -85,6 +85,7 @@ anti_ptrace(int cmd)
         // restore the pointer to the original function
         switch (version_major)
         {
+			case SIERRA:
 			case ELCAPITAN:
             case YOSEMITE:
                 g_sysent_yos[SYS_ptrace].sy_call = (sy_call_t*)real_ptrace;
@@ -101,6 +102,7 @@ anti_ptrace(int cmd)
     {
         switch (version_major)
         {
+			case SIERRA:
 			case ELCAPITAN:
             case YOSEMITE:
             {
@@ -150,6 +152,7 @@ anti_sysctl(int cmd)
         }
         switch (version_major)
         {
+			case SIERRA:
 			case ELCAPITAN:
             case YOSEMITE:
                 g_sysent_yos[SYS___sysctl].sy_call = (sy_call_t *)real_sysctl;
@@ -166,6 +169,7 @@ anti_sysctl(int cmd)
     {
         switch (version_major)
         {
+			case SIERRA:
 			case ELCAPITAN:
             case YOSEMITE:
             {

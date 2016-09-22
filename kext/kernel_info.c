@@ -70,7 +70,6 @@ static kern_return_t get_kernel_mach_header(void *buffer, vnode_t kernel_vnode, 
 static kern_return_t process_kernel_mach_header(void *kernel_header, struct kernel_info *kinfo);
 static kern_return_t get_kernel_linkedit(vnode_t kernel_vnode, struct kernel_info *kinfo);
 static void get_running_text_address(struct kernel_info *kinfo);
-static kern_return_t get_and_process_kernel_image(vnode_t kernel_vnode, struct kernel_info *kinfo);
 static int is_current_kernel(void *kernel_header, mach_vm_address_t kernel_base);
 static uint64_t * get_uuid(void *mach_header);
 
