@@ -66,7 +66,7 @@ extern int (*real_ptrace)(struct proc *, struct ptrace_args *, int *);
 extern int (*real_sysctl)(struct proc *, struct __sysctl_args *, int *);
 
 // local functions
-static uint8_t process_header(const mach_vm_address_t target_address, uint64_t *data_address, uint64_t *data_size);
+static uint8_t process_header(const mach_vm_address_t target_address, const char *segment_name, uint64_t *segment_address, uint64_t *seg_size);
 static void* bruteforce_sysent(mach_vm_address_t *out_kernel_base);
 
 #pragma mark Externally available functions
@@ -247,17 +247,22 @@ bruteforce_sysent(mach_vm_address_t *out_kernel_base)
     // search backwards for the kernel base address (mach-o header)
     mach_vm_address_t kernel_base = find_kernel_base(int80_address);
     *out_kernel_base = kernel_base;
-    uint64_t data_address = 0;
-    uint64_t data_size = 0;
-    // search for the __DATA segment
-    process_header(kernel_base, &data_address, &data_size);
-    uint64_t data_limit = data_address + data_size;
+    uint64_t segment_address = 0;
+    uint64_t segment_size = 0;
+	if (version_major >= SIERRA) {
+		// search for the __CONST segment
+		process_header(kernel_base, "__CONST", &segment_address, &segment_size);
+	} else {
+		// search for the __DATA segment
+		process_header(kernel_base, "__DATA", &segment_address, &segment_size);
+	}
+	uint64_t segment_limit = segment_address + segment_size;
     // bruteforce search for sysent in __DATA segment
-    while (data_address <= data_limit)
+    while (segment_address <= segment_limit)
     {
         if (version_major >= YOSEMITE)
         {
-            struct sysent_yosemite *table = (struct sysent_yosemite*)data_address;
+            struct sysent_yosemite *table = (struct sysent_yosemite*)segment_address;
             if((void*)table != NULL &&
                table[SYS_exit].sy_narg      == 1 &&
                table[SYS_fork].sy_narg      == 0 &&
@@ -269,13 +274,13 @@ bruteforce_sysent(mach_vm_address_t *out_kernel_base)
                table[SYS_recvmsg].sy_narg   == 3 )
             {
                 LOG_DEBUG("exit() address is %p", (void*)table[SYS_exit].sy_call);
-                return (void*)data_address;
+                return (void*)segment_address;
             }
         }
         /* mavericks or higher */
         else if (version_major == MAVERICKS)
         {
-            struct sysent_mavericks *table = (struct sysent_mavericks*)data_address;
+            struct sysent_mavericks *table = (struct sysent_mavericks*)segment_address;
             if((void*)table != NULL &&
                table[SYS_exit].sy_narg      == 1 &&
                table[SYS_fork].sy_narg      == 0 &&
@@ -287,13 +292,13 @@ bruteforce_sysent(mach_vm_address_t *out_kernel_base)
                table[SYS_recvmsg].sy_narg   == 3 )
             {
                 LOG_DEBUG("exit() address is %p", (void*)table[SYS_exit].sy_call);
-                return (void*)data_address;
+                return (void*)segment_address;
             }
         }
         /* all previous versions */
         else
         {
-            struct sysent *table = (struct sysent*)data_address;
+            struct sysent *table = (struct sysent*)segment_address;
             if((void*)table != NULL &&
                table[SYS_exit].sy_narg      == 1 &&
                table[SYS_fork].sy_narg      == 0 &&
@@ -305,20 +310,20 @@ bruteforce_sysent(mach_vm_address_t *out_kernel_base)
                table[SYS_recvmsg].sy_narg   == 3 )
             {
                 LOG_DEBUG("exit() address is %p", (void*)table[SYS_exit].sy_call);
-                return (void*)data_address;
+                return (void*)segment_address;
             }
         }
-        data_address++;
+        segment_address++;
     }
     return NULL;
 }
 
 /* 
  * process target kernel module header and retrieve some info we need
- * more specifically the __DATA segment
+ * more specifically the __DATA or __CONST segment
  */
 static uint8_t
-process_header(const mach_vm_address_t target_address, uint64_t *data_address, uint64_t *data_size)
+process_header(const mach_vm_address_t target_address, const char *segment_name, uint64_t *segment_address, uint64_t *seg_size)
 {
     // verify if it's a valid mach-o binary
     struct mach_header *mh = (struct mach_header*)target_address;
@@ -345,22 +350,22 @@ process_header(const mach_vm_address_t target_address, uint64_t *data_address, u
             case LC_SEGMENT:
             {
                 struct segment_command *segmentCommand = (struct segment_command *)load_cmd;
-                if (strncmp(segmentCommand->segname, "__DATA", 16) == 0)
+                if (strncmp(segmentCommand->segname, segment_name, 16) == 0)
                 {
-                    *data_address = segmentCommand->vmaddr;
-                    *data_size    = segmentCommand->vmsize;
-                    LOG_DEBUG("Found __DATA segment at %p!", (void*)*data_address);
+                    *segment_address = segmentCommand->vmaddr;
+                    *seg_size    = segmentCommand->vmsize;
+                    LOG_DEBUG("Found __DATA segment at %p!", (void*)*segment_address);
                 }
                 break;
             }
             case LC_SEGMENT_64:
             {
                 struct segment_command_64 *segmentCommand = (struct segment_command_64 *)load_cmd;
-                if (strncmp(segmentCommand->segname, "__DATA", 16) == 0)
+                if (strncmp(segmentCommand->segname, segment_name, 16) == 0)
                 {
-                    *data_address = segmentCommand->vmaddr;
-                    *data_size    = segmentCommand->vmsize;
-                    LOG_DEBUG("Found __DATA segment at %p!", (void*)*data_address);
+                    *segment_address = segmentCommand->vmaddr;
+                    *seg_size    = segmentCommand->vmsize;
+                    LOG_DEBUG("Found __DATA segment at %p!", (void*)*segment_address);
                 }
                 break;
             }
