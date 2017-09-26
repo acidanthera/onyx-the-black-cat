@@ -73,9 +73,9 @@ onyx_the_black_cat_start (kmod_info_t * ki, void * d)
            "      The Black Cat v%s\n", VERSION);
     
     /* needs to be updated for every new major version supported */
-    if (version_major > SIERRA)
+    if (version_major > HIGH_SIERRA)
     {
-        LOG_ERROR("Only Sierra or lower supported!");
+        LOG_ERROR("Only High Sierra or lower supported!");
         return KERN_FAILURE;
     }
     

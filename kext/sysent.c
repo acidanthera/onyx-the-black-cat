@@ -89,6 +89,7 @@ find_sysent(mach_vm_address_t *out_kernel_base)
     }
     switch (version_major)
     {
+    case HIGH_SIERRA:
 		case SIERRA:
 		case ELCAPITAN:
         case YOSEMITE:

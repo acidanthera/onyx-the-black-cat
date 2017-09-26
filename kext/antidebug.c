@@ -85,6 +85,7 @@ anti_ptrace(int cmd)
         // restore the pointer to the original function
         switch (version_major)
         {
+      case HIGH_SIERRA:
 			case SIERRA:
 			case ELCAPITAN:
             case YOSEMITE:
@@ -102,6 +103,7 @@ anti_ptrace(int cmd)
     {
         switch (version_major)
         {
+      case HIGH_SIERRA:
 			case SIERRA:
 			case ELCAPITAN:
             case YOSEMITE:
@@ -152,6 +154,7 @@ anti_sysctl(int cmd)
         }
         switch (version_major)
         {
+      case HIGH_SIERRA:
 			case SIERRA:
 			case ELCAPITAN:
             case YOSEMITE:
@@ -169,6 +172,7 @@ anti_sysctl(int cmd)
     {
         switch (version_major)
         {
+      case HIGH_SIERRA:
 			case SIERRA:
 			case ELCAPITAN:
             case YOSEMITE:
