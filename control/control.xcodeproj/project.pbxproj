@@ -90,7 +90,7 @@
 		7BED986C174D251400330131 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = reverser;
 			};
 			buildConfigurationList = 7BED986F174D251400330131 /* Build configuration list for PBXProject "control" */;

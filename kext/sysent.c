@@ -89,7 +89,7 @@ find_sysent(mach_vm_address_t *out_kernel_base)
     }
     switch (version_major)
     {
-    case HIGH_SIERRA:
+        case HIGH_SIERRA:
 		case SIERRA:
 		case ELCAPITAN:
         case YOSEMITE:
@@ -159,9 +159,9 @@ cleanup_sysent(void)
 mach_vm_address_t
 calculate_int80address(const mach_vm_address_t idt_address)
 {
-  	// find the address of interrupt 0x80 - EXCEP64_SPC_USR(0x80,hi64_unix_scall) @ osfmk/i386/idt64.s
-	struct descriptor_idt *int80_descriptor = NULL;
-	mach_vm_address_t int80_address = 0;
+    // find the address of interrupt 0x80 - EXCEP64_SPC_USR(0x80,hi64_unix_scall) @ osfmk/i386/idt64.s
+    struct descriptor_idt *int80_descriptor = NULL;
+    mach_vm_address_t int80_address = 0;
     // we need to compute the address, it's not direct
     // extract the stub address
 #if __LP64__
@@ -186,25 +186,29 @@ calculate_int80address(const mach_vm_address_t idt_address)
 mach_vm_address_t
 find_kernel_base(const mach_vm_address_t int80_address)
 {
-    mach_vm_address_t temp_address = int80_address;
 #if __LP64__
-    struct segment_command_64 *segment_command = NULL;
-    while (temp_address > 0)
-    {
-        if (*(uint32_t*)(temp_address) == MH_MAGIC_64)
-        {
+    // Backported from Lilu to fix compatibility with latest 10.13 security fixes.
+    mach_vm_address_t tmp = (mach_vm_address_t)printf;
+    const size_t KASLRAlignment = 0x100000;
+
+    // Align the address
+    tmp &= ~(KASLRAlignment - 1);
+
+    // Search backwards for the kernel base address (mach-o header)
+    while (true) {
+        if (*(uint32_t *)(tmp) == MH_MAGIC_64) {
             // make sure it's the header and not some reference to the MAGIC number
-            segment_command = (struct segment_command_64*)(temp_address + sizeof(struct mach_header_64));
-            if (strncmp(segment_command->segname, "__TEXT", 16) == 0)
-            {
-                LOG_DEBUG("Found kernel mach-o header address at %p", (void*)(temp_address));
-                return temp_address;
+            struct segment_command_64 * segmentCommand = (struct segment_command_64 *)(tmp + sizeof(struct mach_header_64));
+            if (!strncmp(segmentCommand->segname, "__TEXT", strlen("__TEXT"))) {
+                LOG_DEBUG("Found kernel mach-o header address at %llx", tmp);
+                return tmp;
             }
         }
-        if (temp_address - 1 > temp_address) break;
-        temp_address--;
+
+        tmp -= KASLRAlignment;
     }
 #else
+    mach_vm_address_t temp_address = int80_address;
     struct segment_command *segment_command = NULL;
     while (temp_address > 0)
     {
