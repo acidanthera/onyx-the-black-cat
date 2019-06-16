@@ -116,6 +116,7 @@ struct sysent_yosemite {
 #define ELCAPITAN   15
 #define SIERRA      16
 #define HIGH_SIERRA 17
+#define MOJAVE      18
 
 #if DEBUG
 #define LOG_DEBUG(fmt, ...) printf("[DEBUG] " fmt "\n", ## __VA_ARGS__)

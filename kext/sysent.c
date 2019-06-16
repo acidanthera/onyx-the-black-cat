@@ -89,6 +89,7 @@ find_sysent(mach_vm_address_t *out_kernel_base)
     }
     switch (version_major)
     {
+        case MOJAVE:
         case HIGH_SIERRA:
 		case SIERRA:
 		case ELCAPITAN:
@@ -254,7 +255,7 @@ bruteforce_sysent(mach_vm_address_t *out_kernel_base)
     *out_kernel_base = kernel_base;
     uint64_t segment_address = 0;
     uint64_t segment_size = 0;
-	if (version_major >= SIERRA) {
+	if (version_major >= MOJAVE) {
 		// search for the __CONST segment
 		process_header(kernel_base, "__CONST", &segment_address, &segment_size);
 	} else {
