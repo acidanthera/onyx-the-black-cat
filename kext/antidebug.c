@@ -85,10 +85,11 @@ anti_ptrace(int cmd)
         // restore the pointer to the original function
         switch (version_major)
         {
+            case CATALINA:
             case MOJAVE:
             case HIGH_SIERRA:
-			case SIERRA:
-			case ELCAPITAN:
+            case SIERRA:
+            case ELCAPITAN:
             case YOSEMITE:
                 g_sysent_yos[SYS_ptrace].sy_call = (sy_call_t*)real_ptrace;
                 break;
@@ -104,10 +105,11 @@ anti_ptrace(int cmd)
     {
         switch (version_major)
         {
+            case CATALINA:
             case MOJAVE:
             case HIGH_SIERRA:
-			case SIERRA:
-			case ELCAPITAN:
+            case SIERRA:
+            case ELCAPITAN:
             case YOSEMITE:
             {
                 // save address of the real function
@@ -156,10 +158,11 @@ anti_sysctl(int cmd)
         }
         switch (version_major)
         {
+            case CATALINA:
             case MOJAVE:
             case HIGH_SIERRA:
-			case SIERRA:
-			case ELCAPITAN:
+            case SIERRA:
+            case ELCAPITAN:
             case YOSEMITE:
                 g_sysent_yos[SYS___sysctl].sy_call = (sy_call_t *)real_sysctl;
                 break;
@@ -175,10 +178,11 @@ anti_sysctl(int cmd)
     {
         switch (version_major)
         {
+            case CATALINA:
             case MOJAVE:
             case HIGH_SIERRA:
-			case SIERRA:
-			case ELCAPITAN:
+            case SIERRA:
+            case ELCAPITAN:
             case YOSEMITE:
             {
                 real_sysctl = (void*)g_sysent_yos[SYS___sysctl].sy_call;

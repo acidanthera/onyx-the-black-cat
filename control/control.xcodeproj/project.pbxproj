@@ -46,6 +46,7 @@
 				7BED9875174D251400330131 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		7BED9875174D251400330131 /* Products */ = {
 			isa = PBXGroup;

@@ -94,6 +94,7 @@
 				7B96688218A5C3E900A82135 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		7B96688218A5C3E900A82135 /* Products */ = {
 			isa = PBXGroup;
