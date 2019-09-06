@@ -259,8 +259,7 @@ bruteforce_sysent(mach_vm_address_t *out_kernel_base)
     if (version_major >= CATALINA) {
         // search for the __DATA_CONST segment
         process_header(kernel_base, "__DATA_CONST", &segment_address, &segment_size);
-    }
-    else if (version_major >= SIERRA && version_major < CATALINA) {
+    } else if (version_major >= SIERRA) {
         // search for the __CONST segment
         process_header(kernel_base, "__CONST", &segment_address, &segment_size);
     } else {
