@@ -256,14 +256,17 @@ bruteforce_sysent(mach_vm_address_t *out_kernel_base)
     *out_kernel_base = kernel_base;
     uint64_t segment_address = 0;
     uint64_t segment_size = 0;
-	if (version_major >= SIERRA) {
-		// search for the __CONST segment
-		process_header(kernel_base, "__CONST", &segment_address, &segment_size);
-	} else {
-		// search for the __DATA segment
-		process_header(kernel_base, "__DATA", &segment_address, &segment_size);
-	}
-	uint64_t segment_limit = segment_address + segment_size;
+    if (version_major >= CATALINA) {
+        // search for the __DATA_CONST segment
+        process_header(kernel_base, "__DATA_CONST", &segment_address, &segment_size);
+    } else if (version_major >= SIERRA) {
+        // search for the __CONST segment
+        process_header(kernel_base, "__CONST", &segment_address, &segment_size);
+    } else {
+        // search for the __DATA segment
+        process_header(kernel_base, "__DATA", &segment_address, &segment_size);
+    }
+    uint64_t segment_limit = segment_address + segment_size;
     // bruteforce search for sysent in __DATA segment
     while (segment_address <= segment_limit)
     {

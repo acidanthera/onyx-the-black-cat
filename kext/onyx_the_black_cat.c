@@ -73,9 +73,9 @@ onyx_the_black_cat_start (kmod_info_t * ki, void * d)
            "      The Black Cat v%s\n", VERSION);
     
     /* needs to be updated for every new major version supported */
-    if (version_major > MOJAVE)
+    if (version_major > CATALINA)
     {
-        LOG_ERROR("Only Mojave or lower supported!");
+        LOG_ERROR("Only Catalina or lower supported!");
         return KERN_FAILURE;
     }
     
