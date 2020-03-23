@@ -1,10 +1,5 @@
- ________
- \_____  \   ____ ___.__.___  ___
-  /   |   \ /    <   |  |\  \/  /
- /    |    \   |  \___  | >    <
- \_______  /___|  / ____|/__/\_ \
-         \/     \/\/           \/
-                    The Black Cat
+Onyx The Black Cat
+==================
 
 Copyright (c) fG!, 2011, 2012, 2013, 2014 - reverser@put.as - http://reverse.put.as
 All rights reserved.
