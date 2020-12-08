@@ -1,7 +1,7 @@
 Onyx The Black Cat
 ==================
 
-Copyright (c) fG!, 2011, 2012, 2013, 2014 - reverser@put.as - http://reverse.put.as
+Copyright © fG!, 2011, 2012, 2013, 2014 - reverser@put.as - http://reverse.put.as
 All rights reserved.
 
 Introduction
